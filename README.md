@@ -3,8 +3,7 @@
         $pdf = Pdf::loadView('pdf.invoice', $data);
         return $pdf->download('invoice.pdf');
    ]
-3. 
-    $pdf = App::make('dompdf.wrapper');
-    $pdf->loadHTML('<h1>Test</h1>');
-    return $pdf->stream();
+3. $pdf = App::make('dompdf.wrapper');
+   $pdf->loadHTML('<h1>Test</h1>');
+   return $pdf->stream();
    
